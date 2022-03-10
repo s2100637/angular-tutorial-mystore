@@ -15,4 +15,8 @@ fa-icon {
 
 a {
   cursor: pointer;
+  color: #a52a2a;
+  border-color: #a52a2a;
+  background-color: #f2d8af;
+  margin: 1.6rem 1rem 1.8rem 0.1rem;
 }
