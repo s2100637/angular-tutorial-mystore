@@ -1,1 +1,13 @@
-<p>top-bar works!</p>
+<div class="container-fluid pt-1" style="background-color: #a52a2a;">
+    <div class="row">
+        <div class="col-6">
+            <a>
+                <h2 [routerLink]="['/']">My Store</h2>
+            </a>
+        </div>
+    
+        <div class="col-6 pb-1 d-flex justify-content-end">
+            <a [routerLink]="['/cart']"><fa-icon [icon]="faShoppingCart"></fa-icon>Checkout</a>
+        </div>
+    </div>
+</div>
