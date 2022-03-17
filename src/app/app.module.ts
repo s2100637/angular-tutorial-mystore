@@ -11,6 +11,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { CartService } from './cart.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { RouterModule } from '@angular/router';
       {path: '', component: ProductListComponent},
     ])
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
