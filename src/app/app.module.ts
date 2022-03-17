@@ -15,6 +15,9 @@ import { CartService } from './cart.service';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BackbtnComponent } from './backbtn/backbtn.component';
+import { ShippingComponent } from './shipping/shipping.component';
+import { BackButtonDirective } from './back-button.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     BottomBarComponent,
     ProductListComponent,
     ProductDetailsComponent,
-    CartComponent
+    CartComponent,
+    BackbtnComponent,
+    ShippingComponent,
+    BackButtonDirective
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,7 @@ import { ReactiveFormsModule } from '@angular/forms';
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
-
+      { path: 'shipping', component: ShippingComponent },
     ])
   ],
   providers: [CartService],
