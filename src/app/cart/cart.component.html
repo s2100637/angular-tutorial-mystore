@@ -4,8 +4,8 @@
   <a routerLink="/shipping">Shipping Prices</a>
 </p>
 
+<h6>My Order</h6>
 <div class="cart-item bg-light p-3" *ngFor="let item of items">
-  <h6>My Order</h6>
   <span>{{ item.name }}</span>
   <span class="ml-5"><strong>{{ item.price | currency }}</strong></span>
 </div>
