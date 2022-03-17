@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BackbtnComponent } from './backbtn/backbtn.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { BackButtonDirective } from './back-button.directive';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BackButtonDirective } from './back-button.directive';
     CartComponent,
     BackbtnComponent,
     ShippingComponent,
-    BackButtonDirective
+    BackButtonDirective,
+    ProductAlertsComponent
   ],
   imports: [
     BrowserModule,
