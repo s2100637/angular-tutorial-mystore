@@ -1,9 +1,9 @@
 <div class="product-details">
-  <h4>Product Details</h4>
+  <h4 class="h-text">Product Details</h4>
   
   <div class="card p-3 mb-5" *ngIf="product">
     <img [src]="product.imgUrl" class="img-fluid p-5"/>
-    <h3>{{ product.name }}</h3>
+    <h3 class="h-text">{{ product.name }}</h3>
     <h4>{{ product.price | currency }}</h4>
     <p>{{ product.description }}</p>
   
